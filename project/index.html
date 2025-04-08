@@ -96,6 +96,8 @@ body .post-navigation .nav-links {
 <link rel="stylesheet" id="wpos-magnific-style-css" href="/wp-content/plugins/meta-slider-and-carousel-with-lightbox/assets/css/magnific-popup.css?ver=2.0.4" media="all">
 <link rel="stylesheet" id="wpos-slick-style-css" href="/wp-content/plugins/meta-slider-and-carousel-with-lightbox/assets/css/slick.css?ver=2.0.4" media="all">
 <link rel="stylesheet" id="wp-igsp-public-css-css" href="/wp-content/plugins/meta-slider-and-carousel-with-lightbox/assets/css/wp-igsp-public.css?ver=2.0.4" media="all">
+<link rel="stylesheet" id="mpfe_front_style-css" href="/wp-content/plugins/music-player-for-elementor/css/mpfe-front-style.css?ver=2.4.5" media="all">
+<link rel="stylesheet" id="font-awesome-5.15.1-css" href="/wp-content/plugins/music-player-for-elementor/assets/fontawesome-free-5.15.1/css/all.min.css?ver=5.15.1" media="all">
 <link rel="stylesheet" id="fse-style-css" href="/wp-content/themes/makoa/style.css?ver=1.0.4" media="all">
 <script src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
 <script src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
@@ -118,8 +120,25 @@ var VPData = {"version":"3.3.12","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 		<script type="importmap" id="wp-importmap">{"imports":{"@wordpress\/interactivity":"\/wp-includes\/js\/dist\/script-modules\/interactivity\/index.min.js?ver=907ea3b2f317a78b7b9b"}}</script>
 <script type="module" src="/wp-includes/js/dist/script-modules/block-library/navigation/view.min.js?ver=8ff192874fc8910a284c" id="@wordpress/block-library/navigation/view-js-module"></script>
 <link rel="modulepreload" href="/wp-includes/js/dist/script-modules/interactivity/index.min.js?ver=907ea3b2f317a78b7b9b" id="@wordpress/interactivity-js-modulepreload">
+<meta name="generator" content="Elementor 3.28.3; features: e_font_icon_svg, additional_custom_breakpoints, e_local_google_fonts, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-swap">
 <style type="text/css" id="filter-everything-inline-css">.wpc-orderby-select{width:100%}.wpc-filters-open-button-container{display:none}.wpc-debug-message{padding:16px;font-size:14px;border:1px dashed #ccc;margin-bottom:20px}.wpc-debug-title{visibility:hidden}.wpc-button-inner,.wpc-chip-content{display:flex;align-items:center}.wpc-icon-html-wrapper{position:relative;margin-right:10px;top:2px}.wpc-icon-html-wrapper span{display:block;height:1px;width:18px;border-radius:3px;background:#2c2d33;margin-bottom:4px;position:relative}span.wpc-icon-line-1:after,span.wpc-icon-line-2:after,span.wpc-icon-line-3:after{content:"";display:block;width:3px;height:3px;border:1px solid #2c2d33;background-color:#fff;position:absolute;top:-2px;box-sizing:content-box}span.wpc-icon-line-3:after{border-radius:50%;left:2px}span.wpc-icon-line-1:after{border-radius:50%;left:5px}span.wpc-icon-line-2:after{border-radius:50%;left:12px}body .wpc-filters-open-button-container a.wpc-filters-open-widget,body .wpc-filters-open-button-container a.wpc-open-close-filters-button{display:inline-block;text-align:left;border:1px solid #2c2d33;border-radius:2px;line-height:1.5;padding:7px 12px;background-color:transparent;color:#2c2d33;box-sizing:border-box;text-decoration:none!important;font-weight:400;transition:none;position:relative}@media screen and (max-width:768px){.wpc_show_bottom_widget .wpc-filters-open-button-container,.wpc_show_open_close_button .wpc-filters-open-button-container{display:block}.wpc_show_bottom_widget .wpc-filters-open-button-container{margin-top:1em;margin-bottom:1em}}</style>
-		<style type="text/css">/* If html does not have either class, do not show lazy loaded images. */
+			<style>.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}</style>
+					<style type="text/css">/* If html does not have either class, do not show lazy loaded images. */
 			html:not(.vp-lazyload-enabled):not(.js) .vp-lazyload {
 				display: none;
 			}</style>
@@ -132,8 +151,42 @@ var VPData = {"version":"3.3.12","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
 @font-face{font-family:"DM Sans";font-style:normal;font-weight:700;font-display:fallback;src:url('/wp-content/themes/makoa/assets/fonts/DMSans-VariableFont_opsz,wght.ttf') format('truetype');font-stretch:normal;}</style>
 </head>
 
-<body class="page-template-default page page-id-16 wp-embed-responsive">
+<body class="page-template-default page page-id-16 wp-embed-responsive elementor-default elementor-kit-539">
+		<script>(function($) {
+				if (!$) {
+					return;
+				}
 
+				// Previously we added this code on Elementor pages only,
+				// but sometimes Lightbox enabled globally and it still conflicting with our galleries.
+				// if (!$('.elementor-page').length) {
+				//     return;
+				// }
+
+				function addDataAttribute($items) {
+					$items.find('.vp-portfolio__item a:not([data-elementor-open-lightbox])').each(function () {
+						if (/\.(png|jpe?g|gif|svg|webp)(\?.*)?$/i.test(this.href)) {
+							this.dataset.elementorOpenLightbox = 'no';
+						}
+					});
+				}
+
+				$(document).on('init.vpf', function(event, vpObject) {
+					if ('vpf' !== event.namespace) {
+						return;
+					}
+
+					addDataAttribute(vpObject.$item);
+				});
+				$(document).on('addItems.vpf', function(event, vpObject, $items) {
+					if ('vpf' !== event.namespace) {
+						return;
+					}
+
+					addDataAttribute($items);
+				});
+			})(window.jQuery);</script>
+		
 <div class="wp-site-blocks">
 <header class="wp-block-template-part">
 <div class="wp-block-group is-layout-constrained wp-container-core-group-is-layout-2 wp-block-group-is-layout-constrained" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--30);padding-right:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30);padding-left:var(--wp--preset--spacing--30)">
@@ -411,7 +464,31 @@ var VPData = {"version":"3.3.12","pro":false,"__":{"couldnt_retrieve_vp":"Couldn
             parent.querySelector( '.cool-tag-cloud-load-more').classList.toggle('cool-tag-cloud-active');
         }</script>
     <div class="wpc-filters-overlay"></div>
-<script src="/wp-content/plugins/embed-any-document/js/pdfobject.min.js?ver=2.7.6" id="awsm-ead-pdf-object-js"></script>
+			<script>const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );</script>
+			<script src="/wp-content/plugins/embed-any-document/js/pdfobject.min.js?ver=2.7.6" id="awsm-ead-pdf-object-js"></script>
 <script id="awsm-ead-public-js-extra">var eadPublic = [];</script>
 <script src="/wp-content/plugins/embed-any-document/js/embed-public.min.js?ver=2.7.6" id="awsm-ead-public-js"></script>
 <script id="wp-block-template-skip-link-js-after">( function() {
